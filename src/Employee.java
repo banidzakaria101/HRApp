@@ -1,6 +1,6 @@
 public class Employee {
     private String name;
-    private int salary;
+    private double salary;
     private String department;
     private int id;
 
@@ -19,7 +19,7 @@ public class Employee {
         this.name = name;
     }
 
-    public int getSalary() {
+    public double getSalary() {
         return salary;
     }
 
@@ -41,6 +41,11 @@ public class Employee {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return " Employee's name: " + name + " salary: " + salary + " department: " + department + " id: " + id;
     }
 
 }
