@@ -8,6 +8,10 @@ public class Main {
         Employee employee2 = new Employee("abraham",1200,"it",2);
         Employee employee3 = new Employee("noah",1130,"it",3);
 
+        Department department = new Department();
+        department.addEmployee(employee1);
+        department.addEmployee(employee2);
+        department.addEmployee(employee3);
 
     }
 }
